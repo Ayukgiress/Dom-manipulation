@@ -1,8 +1,8 @@
 // targets name and age id
-document.getElementById("nameInput").addEventListener("input", function () {
+document.getElementById("name-input").addEventListener("input", function () {
   //then initiate search function which targets my list
   var searchValue = this.value.toLowerCase();
-  var listItems = document.getElementById("myList").getElementsByTagName("li");
+  var listItems = document.getElementById("my-list").getElementsByTagName("li");
 
   //then we iterate over evry list
   for (var i = 0; i < listItems.length; i++) {
@@ -14,17 +14,20 @@ document.getElementById("nameInput").addEventListener("input", function () {
     }
   }
 });
+
 //first call the addtolist function and
 //target the  name, age and list id
 function addToList() {
-  var name = document.getElementById("nameInput").value;
-  var age = document.getElementById("ageInput").value;
-  var list = document.getElementById("myList");
+  var name = document.getElementById("name-input").value;
+  var age = document.getElementById("age-input").value;
+  var list = document.getElementById("my-list");
+
   //after add the dot create element
   //which then is define with textcontent
   //to add name and age
   var listItem = document.createElement("li");
   listItem.textContent = name + "-" + age;
+
   //then append any child item that is to be added to the listitem
   list.appendChild(listItem);
 }
@@ -32,10 +35,13 @@ function addToList() {
 var deleteButton = document.getElementsByClassName("delete-button");
 
 //go through the buttons agian
+
 for (var i = 0; i < deleteButton.length; i++) {
   //add a click funtion to the buttons
+
   deleteButton[i].addEventListener("click", function () {
     //finally add the parent node so when button is clicked, it remove a list
+
     this.parentNode.remove();
   });
 }

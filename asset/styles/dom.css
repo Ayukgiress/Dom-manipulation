@@ -21,15 +21,15 @@ h5 {
   justify-content: center;
 }
 
-#myDiv {
+#mydiv {
   text-align: center;
   justify-content: center;
   margin-top: 25px;
   padding: 15px;
 }
 
-#nameInput,
-#ageInput {
+#nameinput,
+#ageinput {
   background: #ffa500;
   width: 20vw;
   height: 3vh;
@@ -50,7 +50,7 @@ h5 {
 }
 
 .delete-button {
-  background: #ff0000;
+  background: #f00;
   color: #030503;
   width: 8vw;
   height: 3vh;
@@ -63,7 +63,7 @@ h5 {
   justify-content: center;
   margin: 15px;
   background: #0b0c0e;
-  color: #ffffff;
+  color: #fff;
   height: 6vh;
   width: 40vw;
   margin-left: 22%;
