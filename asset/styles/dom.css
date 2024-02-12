@@ -4,10 +4,6 @@ body {
   height: 100%;
 }
 
-body:hover {
-  background: #0a9e2f;
-}
-
 body h1,
 h4,
 h5 {
